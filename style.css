@@ -1,11 +1,12 @@
 body {
     font-family: 'Raleway', sans-serif;
+    background-color: rgb(54, 52, 52);
     margin: 0;
     padding: 0;
 }
 
 #navbar {
-    position: relative;
+    position: fixed;
 }
 
 #nav-list {
@@ -29,8 +30,13 @@ body {
     color: white;
 }
 
+#nav-list li a:hover {
+    background-color: darkgreen;
+    width: 100%;
+    border-radius: 5px;
+}
+
 #welcome-section {
-    background-color: rgb(54, 52, 52);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -39,19 +45,26 @@ body {
 }
 
 #welcome-section h1 {
+    margin: 0;
     font-size: 50px;
     color: white;
     font-weight: 900;
 }
 
 #welcome-section p {
+    margin: 0;
     font-size: 30px;
     color: crimson;
+}
+
+#projects {
+    background-color: rgb(69, 86, 125);
 }
 
 #projectCard-alignment {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     height: 550px;
 }
 
@@ -59,14 +72,19 @@ body {
     border: 1px solid black;
     border-radius: 5px 5px 0 0;
     width: 30vw;
-    height: 400px;
+    height: fit-content;
     margin: 0 10px;
     text-align: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .project-tile {
-        width: 200px;
+        width: 70vw;
+        margin: 10px 0;
+    }
+    #projectCard-alignment {
+        height: fit-content;
+        margin-bottom: 100px;
     }
 }
 
@@ -88,12 +106,48 @@ body {
     padding: 20px;
 }
 
-
 #profile-link {
     text-decoration: none;
-    padding-bottom: 30px;
 }
 
 #profile-link button {
+    border-style: none;
+    border-radius: 3px;
+    width: 140px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 20px;
     background-color: darkslateblue;
+    color: white;
+}
+
+#contact-section {
+    height: 70vh;
+    text-align: center;
+}
+
+#contact-section header {
+    font-size: 70px;
+    padding-top: 40px;
+    color: white;
+    font-weight: 900;
+}
+
+#contact-section p {
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+}
+
+#contact-icons i{
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+}
+
+footer {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 15px;
+    text-align: center;
 }
