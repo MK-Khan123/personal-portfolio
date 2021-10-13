@@ -1,0 +1,99 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    position: relative;
+}
+
+#nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: crimson;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    min-height: 50px;
+}
+
+#nav-list li a {
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#welcome-section {
+    background-color: rgb(54, 52, 52);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-section h1 {
+    font-size: 50px;
+    color: white;
+    font-weight: 900;
+}
+
+#welcome-section p {
+    font-size: 30px;
+    color: crimson;
+}
+
+#projectCard-alignment {
+    display: flex;
+    justify-content: center;
+    height: 550px;
+}
+
+.project-tile {
+    border: 1px solid black;
+    border-radius: 5px 5px 0 0;
+    width: 30vw;
+    height: 400px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .project-tile {
+        width: 200px;
+    }
+}
+
+.project-tile a {
+    text-decoration: none;
+}
+
+.project-tile a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-name {
+    background-color: darkslateblue;
+    border: 1px solid black;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+
+#profile-link {
+    text-decoration: none;
+    padding-bottom: 30px;
+}
+
+#profile-link button {
+    background-color: darkslateblue;
+}
